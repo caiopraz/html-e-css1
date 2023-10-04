@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #130818;
+    color: #FF9C40;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+h3.branca {
+    color: white;
+}
+
+h3.roxa {
+    color: #130818;
+}
+
+section {
+    padding: 40px;
+}
+
+section.services {
+    background-color: #130818;
+    color: #FF9C40;
+}
+
+
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+footer {
+    background-color: #130818;
+    color: #FF9C40;
+    padding: 20px;
+    text-align: center;
+}
