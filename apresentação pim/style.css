@@ -39,19 +39,24 @@ section.services > p {
     background-color: rgba(255, 255, 255, 0.11);
     padding: 10px;
     border-radius: 6px;
-    width: 300px;
+    width: 800px;
     height: 300px;
     color: #FF9C40;
 }
 
 img {
+    display: block;
     width: 500px;
-    height: 300px;
+    height: 320px;
+    box-shadow: black;
+    border-radius: 5px;
 }
 
 img.ponto {
     width: 500px;
-    height: 300px;
+    height: 320px;
+    float: right;
+    margin: 1;
 }
 
 footer {
