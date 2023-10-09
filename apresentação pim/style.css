@@ -1,67 +1,95 @@
 @charset "UTF-8";
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    background-color: #130818;
-    color: #FF9C40;
-    padding: 20px;
-    text-align: center;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.6em;
 }
 
-h1 {
-    margin: 0;
-    font-size: 36px;
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
-h3.branca {
+header{
+    background-color: black;
     color: white;
-}
-
-h3.roxa {
-    color: #130818;
-}
-
-section {
-    padding: 40px;
-}
-
-section.services {
-    background-color: #130818;
-    color: #FF9C40;
-}
-
-section.services > p {
-    background-color: rgba(255, 255, 255, 0.11);
-    padding: 10px;
-    border-radius: 6px;
-    width: 800px;
-    height: 300px;
-    color: #FF9C40;
-}
-
-img {
-    display: block;
-    width: 500px;
-    height: 320px;
-    box-shadow: black;
-    border-radius: 5px;
-}
-
-img.ponto {
-    width: 500px;
-    height: 320px;
-    float: right;
-    margin: 1;
-}
-
-footer {
-    background-color: #130818;
-    color: #FF9C40;
-    padding: 20px;
     text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 6vw;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.normal > p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.705);
+    text-shadow: 1px 1px 0px black;
+}
+
+section.imagem{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.705);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-position: right center;
+    background-size: cover;
+    background-image: url('imagens/Ponto-Eletronico.jpg');
+}
+
+section#img02{
+    background-size: cover;
+    background-image: url('imagens/salario-2.jpg');
+}
+
+section#img03{
+    background-size: cover;
+    background-image: url('imagens/aviao.jpeg');
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
