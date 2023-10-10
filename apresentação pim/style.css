@@ -12,6 +12,7 @@
 }
 
 html, body{
+    margin: auto;
     min-height: 97vh;
     background-color: rgb(241, 234, 234);
     font-family: var(--fonte1);
@@ -19,16 +20,18 @@ html, body{
 }
 
 header{
+    text-shadow: 2px 2px 2px 2px black;
     background-color: black;
     color: white;
     text-align: center;
 }
 
 header > h1{
-    padding-top: 50px;
+    text-shadow: 2px 2px 2px 2px black;
+    padding: 30px;
     font-variant: small-caps;
     font-family: var(--fonte1);
-    font-size: 6vw;
+    font-size: 3.5vw;
 }
 
 section{
@@ -41,6 +44,7 @@ section{
 }
 
 section > p{
+    text-shadow: 2px 2px 2px 2px black;
     padding: 2em;
     margin: 2em;
 }
@@ -76,19 +80,28 @@ section.imagem > p{
 }
 
 section#img01{
-    background-position: right center;
+    background-position: center center;
     background-size: cover;
     background-image: url('imagens/Ponto-Eletronico.jpg');
 }
 
 section#img02{
+    background-position: center center;
     background-size: cover;
     background-image: url('imagens/salario-2.jpg');
 }
 
 section#img03{
+    background-position: left center;
     background-size: cover;
     background-image: url('imagens/aviao.jpeg');
+}
+
+h2 {
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 5px;
 }
 
 footer{
@@ -96,4 +109,5 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 3em;
 }
