@@ -12,9 +12,10 @@
 }
 
 html, body{
-    min-height: 100vh;
-    background-color: darkgray;
+    min-height: 97vh;
+    background-color: rgb(241, 234, 234);
     font-family: var(--fonte1);
+    min-width: 500px;
 }
 
 header{
@@ -34,13 +35,14 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
+    padding: 20px;
     font-family: var(--fonte1);
     font-size: 3.5vw;
 }
 
 section > p{
-    padding-bottom: 2em;
+    padding: 2em;
+    margin: 2em;
 }
 
 section.normal{
@@ -57,10 +59,12 @@ section.normal > p {
 }
 
 section.imagem{
+    margin: 10px;
     background-color: rgb(54, 54, 54);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
     background-attachment: fixed;
+    text-align: justify;
 }
 
 section.imagem > p{
