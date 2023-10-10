@@ -2,13 +2,12 @@
 
 
 :root{
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 0.6em;
 }
 
 html, body{
@@ -31,7 +30,6 @@ header > h1{
     padding: 30px;
     font-variant: small-caps;
     font-family: var(--fonte1);
-    font-size: 3.5vw;
 }
 
 section{
@@ -40,26 +38,12 @@ section{
     line-height: 2em;
     padding: 20px;
     font-family: var(--fonte1);
-    font-size: 3.5vw;
 }
 
 section > p{
     text-shadow: 2px 2px 2px 2px black;
     padding: 2em;
     margin: 2em;
-}
-
-section.normal{
-    background-color: white;
-    color: black;
-}
-
-section.normal > p {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.705);
-    text-shadow: 1px 1px 0px black;
 }
 
 section.imagem{
@@ -76,19 +60,19 @@ section.imagem > p{
     padding: 10px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.705);
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 2px 2px 2px 0px black;
 }
 
 section#img01{
     background-position: center center;
     background-size: cover;
-    background-image: url('imagens/Ponto-Eletronico.jpg');
+    background-image: url('imagens/ponto.jpg');
 }
 
 section#img02{
     background-position: center center;
     background-size: cover;
-    background-image: url('imagens/salario-2.jpg');
+    background-image: url('imagens/salario.jpg');
 }
 
 section#img03{
@@ -97,7 +81,12 @@ section#img03{
     background-image: url('imagens/aviao.jpeg');
 }
 
-h2 {
+section > h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 1000px;
+    min-width: 350px;
+    margin: auto;
     text-align: center;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.705);
@@ -105,9 +94,9 @@ h2 {
 }
 
 footer{
+    min-width: 450px;
     background-color: black;
     text-align: center;
     color: white;
     padding: 10px;
-    font-size: 3em;
 }
