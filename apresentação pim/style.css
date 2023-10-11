@@ -25,12 +25,13 @@ a:hover{
 html, body{
     margin: auto;
     min-height: 97vh;
-    background-color: rgb(241, 234, 234);
+    background-color: #6029FF;
     font-family: var(--fonte1);
     min-width: 500px;
 }
 
 header{
+    background-color: #6029FF;
     position: relative;
     padding: 0 2rem;
 }
