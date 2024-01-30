@@ -13,14 +13,25 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(44, 44, 44);
             color: white;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: rgb(179, 177, 177);
         }
 
         td.num{
@@ -31,10 +42,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População por Estado</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -52,7 +64,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>81.004.480</strong></td>
         </tfoot>
     </table>
